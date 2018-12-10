@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova.plugins.diagnostic"
-    version="5.0.0">
+    version="5.0.1">
 
     <name>Diagnostic</name>
     <description>Cordova/Phonegap plugin to check the state of Location/WiFi/Camera/Bluetooth device settings.</description>
@@ -50,15 +50,15 @@
         <framework src="CoreLocation.framework" />
 
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" comment="Default usage descriptions: override as necessary in .plist">
-            <string>Test string A.</string>
+            <string>TeleMapper 2 would like to use your current location to display it on the app, and for directions. It is secure and private.</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" comment="iOS 11 or greater">
-            <string>Test string B.</string>
+            <string>TeleMapper 2 would like to use your current location to display it on the app, and for directions. It is secure and private.</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" comment="iOS 10 or below">
-            <string>Test string C.</string>
+            <string>TeleMapper 2 would like to use your current location to display it on the app, and for directions. It is secure and private.</string>
         </config-file>
         <!--END_MODULE LOCATION-->
 
