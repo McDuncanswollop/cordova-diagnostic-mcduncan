@@ -18,6 +18,12 @@
     <issue>https://github.com/dpa99c/cordova-diagnostic-plugin/issues</issue>
 
     <platform name="ios">
+        <preference name="BACKGROUND_MODE_LOCATION" default="&lt;string&gt;location&lt;/string&gt;" />
+        <preference name="LOCATION_ALWAYS_AND_WHEN_IN_USE_USAGE_DESCRIPTION" default="ESCustom Always use is required for constant background location-tracking" />
+        <preference name="LOCATION_ALWAYS_USAGE_DESCRIPTION" default="ESCustom Background location-tracking is required" />
+        <preference name="LOCATION_WHEN_IN_USE_USAGE_DESCRIPTION" default="ESCustom Background location-tracking is required" />
+        <preference name="MOTION_USAGE_DESCRIPTION" default="ESCustom Using the accelerometer increases battery-efficiency by intelligently toggling location-tracking only when the device is detected to be moving" />
+
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic">
                 <param name="ios-package" value="Diagnostic" />
